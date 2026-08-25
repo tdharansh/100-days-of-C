@@ -1,0 +1,42 @@
+/*Q30: Write a program to reverse a given number.
+
+
+Sample Test Cases:
+Input 1:
+1234
+Output 1:
+4321
+
+Input 2:
+100
+Output 2:
+1
+
+*/
+
+
+#include <stdio.h>
+int main()
+{
+    int n, r=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        r=r*10+n%10;
+        n=n/10;
+    }
+    printf("%d",r);
+    return 0;
+}
+
+/*
+C:\cprog2>gcc program2_day15.c -o program2_day15.out
+
+C:\cprog2>program2_day15.out
+1234
+4321
+C:\cprog2>program2_day15.out
+100
+1
+C:\cprog2>
+*/
